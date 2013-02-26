@@ -1,4 +1,4 @@
-var config = require('./config');
+var config = require('../config');
 
 module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
