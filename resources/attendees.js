@@ -1,10 +1,11 @@
-var config = require('../config');
+var helpers = require('../helpers');
 
 module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
     var body = {
       links: [
-        { rel: ['self'], href: config.baseUri + env.request.url }
+        { rel: ['self'], href: helpers.uri(env.request.url) },
+        { rel: ['index'], href: helpers.uri('home') }
       ]
     };
     env.responseBody = JSON.stringify(body);

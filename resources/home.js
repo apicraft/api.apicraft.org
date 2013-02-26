@@ -1,4 +1,4 @@
-var config = require('../config');
+var helpers = require('../helpers');
 
 module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
@@ -16,11 +16,21 @@ module.exports = function(addHandler) {
         intraParty: true,
         postParty: true
       },
+      entities: [],
       links: [
-        { rel: ['self'], href: config.baseUri + '/' },
-        { rel: ['alternate'], type: 'text/calendar', href: config.baseUri + '/conference.ics' }
+        { rel: ['self'], href: helpers.uri('home') },
+        { rel: ['alternate'], type: 'text/calendar', href: helpers.uri('/conference.ics') }
       ]
     };
+
+    var rels = ['tickets', 'attendees', 'concierge', 'schedule'];
+
+    rels.forEach(function(rel) {
+      body.entities.push({
+        rel: [helpers.rel(rel)],
+        href: helpers.uri(rel)
+      });
+    });
 
     env.responseBody = JSON.stringify(body);
     next(env);

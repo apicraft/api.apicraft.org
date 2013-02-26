@@ -2,6 +2,7 @@ var argo = require('argo-server');
 var errors = require('./middleware/errors');
 var contentType = require('./middleware/contentType');
 var config = require('./config');
+var helpers = require('./helpers');
 
 argo()
   .use(errors)
@@ -13,4 +14,4 @@ argo()
   .get('/concierge', require('./resources/concierge'))
   .listen(config.port);
 
-console.log('API Craft Conf API listening on ' + config.baseUri);
+console.log('API Craft Conf API listening on ' + helpers.uri('home'));

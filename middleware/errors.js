@@ -1,4 +1,4 @@
-var config = require('../config');
+var helpers = require('../helpers');
 
 module.exports = function(addHandler) {
   addHandler('response', function(env, next) {
@@ -15,7 +15,7 @@ module.exports = function(addHandler) {
           error: errors[env.response.statusCode]
         },
         links: [
-          { rel: ['self'], href: config.baseUri + env.request.url }
+          { rel: ['self'], href: helpers.uri(env.request.url) }
         ]
       };
       env.responseBody = JSON.stringify(body);
