@@ -12,6 +12,7 @@ argo()
   .get('/schedule', require('./resources/schedule'))
   .get('/tickets', require('./resources/tickets'))
   .get('/concierge', require('./resources/concierge'))
+  .map('/locations', require('./resources/locations'))
   .listen(config.port);
 
 console.log('API Craft Conf API listening on ' + helpers.uri('home'));

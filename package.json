@@ -18,7 +18,8 @@
   "author": "Kevin Swiber <kswiber@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "argo-server": ">= 0.1.0"
+    "argo-server": ">= 0.1.0",
+    "yelp": "~0.1.1"
   },
   "engines": {
     "node": ">= v0.8.x",
