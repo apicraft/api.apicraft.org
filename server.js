@@ -1,10 +1,12 @@
 var argo = require('argo-server');
-var errors = require('./middleware/errors');
-var contentType = require('./middleware/contentType');
+var contentType = require('./middleware/content_type');
 var config = require('./config');
+var cors = require('./middleware/cors');
+var errors = require('./middleware/errors');
 var helpers = require('./helpers');
 
 argo()
+  .use(cors)
   .use(errors)
   .use(contentType)
   .get('/', require('./resources/home'))
