@@ -1,20 +1,18 @@
 var argo = require('argo-server');
-var contentType = require('./middleware/content_type');
 var config = require('./config');
-var cors = require('./middleware/cors');
-var errors = require('./middleware/errors');
-var helpers = require('./helpers');
+var middleware = require('./middleware');
+var resources = require('./resources');
 
 argo()
-  .use(cors)
-  .use(errors)
-  .use(contentType)
-  .get('/', require('./resources/home'))
-  .get('/attendees', require('./resources/attendees'))
-  .get('/schedule', require('./resources/schedule'))
-  .get('/tickets', require('./resources/tickets'))
-  .get('/concierge', require('./resources/concierge'))
-  .map('/locations', require('./resources/locations'))
+  .use(middleware.cors)
+  .use(middleware.errors)
+  .use(middleware.contentType)
+  .get('/', resources.home)
+  .get('/attendees', resources.attendees)
+  .get('/concierge', resources.concierge)
+  .get('/schedule', resources.schedule)
+  .get('/tickets', resources.tickets)
+  .map('/locations', resources.locations)
   .listen(config.port);
 
-console.log('API Craft Conf API listening on ' + helpers.uri('home'));
+console.log('API Craft Conf API listening on ' + config.baseHrefUri);
