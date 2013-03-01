@@ -8,7 +8,7 @@ module.exports = function(addHandler) {
         { rel: ['index'], href: helpers.uri('home') }
       ]
     };
-    env.responseBody = JSON.stringify(body);
+    env.response.body = JSON.stringify(body);
     next(env);
   });
 };

@@ -18,7 +18,7 @@ module.exports = function(addHandler) {
           { rel: ['self'], href: helpers.uri(env.request.url) }
         ]
       };
-      env.responseBody = JSON.stringify(body);
+      env.response.body = JSON.stringify(body);
     }
 
     next(env);

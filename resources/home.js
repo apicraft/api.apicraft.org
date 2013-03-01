@@ -32,7 +32,7 @@ module.exports = function(addHandler) {
       });
     });
 
-    env.responseBody = JSON.stringify(body);
+    env.response.body = JSON.stringify(body);
     next(env);
   });
 };
