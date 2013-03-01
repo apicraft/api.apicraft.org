@@ -19,5 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "argo-server": "0.0.4"
+  },
+  "engines": {
+    "node": ">= v0.8.x",
+    "npm": ">= 1.2.x"
   }
 }
