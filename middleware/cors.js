@@ -1,7 +1,7 @@
 module.exports = function(handle) {
   handle('response', function(env, next) {
     if (env.request.method === 'OPTIONS') {
-      if (env.response.statusCode != 200) {
+      if (env.response.statusCode == 405) {
         env.response.statusCode = 200;
         env.response.body = null;
       }
