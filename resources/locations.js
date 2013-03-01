@@ -65,5 +65,14 @@ function getLocations(source, dest, len, index, cb) {
 }
 
 function populateLocation(source, dest) {
-  dest.location = source.location;
+	/*
+	dest.id = source.id;
+	dest.is_closed = source.is_closed;
+	dest.name = source.name;
+	dest.image_url = source.image_url;
+	dest.display_phone = source.display_phone;
+	dest.rating = source.rating;
+	dest.rating_img_url_small = source.rating_img_url_small;
+	*/
+	dest.location = source.location;
 }
