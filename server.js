@@ -7,8 +7,7 @@ argo()
   .use(middleware.cors)
   .use(middleware.errors)
   .get('/', resources.home)
-  .get('/conferences', resources.conferences.home)
-  .map('/conferences/detroit', resources.conferences.detroit)
+  .map('/conferences', resources.conferences)
   .listen(config.port);
 
 console.log('API Craft Conf API listening on ' + config.baseHrefUri);
