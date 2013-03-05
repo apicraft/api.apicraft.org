@@ -23,7 +23,7 @@ module.exports = function(addHandler) {
     rels.forEach(function(rel) {
       body.links.push({
         rel: helpers.rel(rel),
-        href: helpers.uri(rel)
+        href: helpers.uri('/conferences/detroit/' + rel)
       });
     });
 
