@@ -6,13 +6,9 @@ var resources = require('./resources');
 argo()
   .use(middleware.cors)
   .use(middleware.errors)
-  .use(middleware.contentType)
   .get('/', resources.home)
-  .get('/attendees', resources.attendees)
-  .get('/concierge', resources.concierge)
-  .get('/schedule', resources.schedule)
-  .get('/tickets', resources.tickets)
-  .map('/locations', resources.locations)
+  .get('/conferences', resources.conferences.home)
+  .map('/conferences/detroit', resources.conferences.detroit)
   .listen(config.port);
 
 console.log('API Craft Conf API listening on ' + config.baseHrefUri);

@@ -1,4 +1,4 @@
-var helpers = require('../helpers');
+var helpers = require('./helpers');
 
 module.exports = function(handle) {
   handle('request', function(env, next) {
@@ -10,3 +10,4 @@ module.exports = function(handle) {
     next(env);
   });
 };
+

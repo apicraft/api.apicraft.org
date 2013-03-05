@@ -9,36 +9,31 @@ var yelp = require('yelp').createClient({
 
 var cached = null;
 
-module.exports = function(proxy) {
-  proxy
-    .get('/detroit', function(handle) {
-      handle('request', function(env, next) {
-        env.response.setHeader('Content-Type', 'application/json;charset=UTF-8');
+module.exports = function(handle) {
+  handle('request', function(env, next) {
+    if (cached) {
+      env.response.statusCode = 200;
+      env.response.body = cached;
+      next(env);
+      return;
+    }
 
-        if (cached) {
-          env.response.statusCode = 200;
-          env.response.body = cached;
-          next(env);
-          return;
-        }
+    var len = detroit.locations.length;
+    getLocations(detroit.locations, [], len, 0, function(err, locations) {
+      if (err) {
+        console.log(err);
+        env.response.statusCode = 500;
+        env.response.body = { error: 'Internal Server Error' };
+        next(env);
+        return;
+      }
 
-        var len = detroit.locations.length;
-        getLocations(detroit.locations, [], len, 0, function(err, locations) {
-          if (err) {
-            console.log(err);
-            env.response.statusCode = 500;
-            env.response.body = { error: 'Internal Server Error' };
-            next(env);
-            return;
-          }
-
-          cached = locations;
-          env.statusCode = 200;
-          env.response.body = locations;
-          next(env);
-        });
-      });
+      cached = locations;
+      env.statusCode = 200;
+      env.response.body = locations;
+      next(env);
     });
+  });
 };
 
 function getLocations(source, dest, len, index, cb) {
