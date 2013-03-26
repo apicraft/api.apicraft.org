@@ -11,6 +11,8 @@ module.exports = function(server) {
         .get('/sessions', detroit.sessions)
         .get('/tickets', detroit.tickets)
         .get('/places', detroit.places)
+        .get('/questions', detroit.questions.get)
+        .post('/questions', detroit.questions.post)
     });
 };
 

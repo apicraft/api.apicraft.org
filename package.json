@@ -19,7 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "argo-server": ">= 0.1.3",
-    "yelp": "~0.1.1"
+    "yelp": "~0.1.1",
+    "msgpack-js": "~0.1.5",
+    "medea": "0.0.3"
   },
   "engines": {
     "node": ">= v0.8.x",
