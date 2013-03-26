@@ -13,7 +13,7 @@ var server = argo()
   .get('/', resources.home)
   .map('/conferences', resources.conferences)
 
-medea.open(__dirname + '/data', function() {
+medea.open(__dirname + '/tmp/data', function() {
   server.listen(config.port);
   console.log('API Craft Conf API listening on ' + config.baseHrefUri);
 });
