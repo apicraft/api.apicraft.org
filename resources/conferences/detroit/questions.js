@@ -19,7 +19,7 @@ exports.get = function(handle) {
         if (!val) {
           env.response.statusCode = 404;
           next(env);
-          return;
+          return; 
         }
         console.log(val);
         env.response.statusCode = 200;
