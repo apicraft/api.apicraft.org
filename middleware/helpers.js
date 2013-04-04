@@ -1,5 +1,3 @@
-var helpers = require('../helpers');
-
 module.exports = function(handle) {
  handle('request', function(env, next) {
    env.helpers = getHelpers(env.config);

@@ -7,7 +7,7 @@ var resources = require('./resources');
 var medea = new Medea();
 
 var server = argo()
-  .use(middleware.config(config));
+  .use(middleware.config(config))
   .use(middleware.helpers)
   .use(middleware.cors)
   .use(middleware.errors)
