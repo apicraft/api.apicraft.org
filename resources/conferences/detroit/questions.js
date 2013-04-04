@@ -6,22 +6,46 @@ exports.get = function(handle) {
     var last = parts[parts.length - 1];
 
     if (last === 'questions') {
-      next(env);
+      env.db.view('questions', 'all', function(err, body) {
+        if (!body) {
+          env.response.statusCode = 404;
+          next(env);
+        }
+        env.response.statusCode = 200;
+        var questions = [];
+        body.rows.forEach(function(row) {
+          var val = row.value;
+          var question = {
+            id: row.id,
+            question: val.question,
+            answer: val.answer,
+            status: val.status
+          };
+          questions.push(question);
+        });
+        env.response.body = questions;
+        next(env);
+      });
     } else {
-      env.medea.get('questions:' + last, function(err, val) {
+      env.db.get(last, function(err, body) {
         if (err) {
           env.response.statusCode = 500;
           next(env);
           return;
         }
-        if (!val) {
+        if (!body) {
           env.response.statusCode = 404;
           next(env);
           return; 
         }
-        console.log(val);
         env.response.statusCode = 200;
-        env.response.body = msgpack.decode(val);
+        var q = {
+          id: body._id,
+          question: body.question,
+          answer: body.answer,
+          status: body.status
+        }
+        env.response.body = q;
         next(env);
       });
     }
@@ -38,37 +62,13 @@ exports.post = function(handle) {
       }
 
       var b = querystring.parse(body.toString());
+      var q = { question: b.question, type: 'question', status: 'new' };
 
-      env.medea.get('questions:list', function(err, val) {
-        if (err) {
-          env.response.statusCode = 500;
-          next(env);
-          return;
-        }
+      env.db.insert(q, function(err, doc) {
+        env.response.statusCode = 201;
+        env.response.setHeader('Location', env.helpers.uri('/conferences/detroit/questions/' + doc.id));
 
-        var questions;
-        if (!val) {
-          questions = [];
-        } else {
-          questions = msgpack.decode(val);
-        }
-
-        var qLen = Object.keys(questions).length + 1;
-
-        var q = { id: qLen, question: b, status: 'new' };
-
-        questions.push('questions:' + qLen);
-
-        var key = 'questions:' + qLen;
-
-        env.medea.put(key, msgpack.encode(q), function(err) {
-          env.medea.put('questions:list', msgpack.encode(questions), function(err) {
-            env.response.statusCode = 201;
-            env.response.setHeader('Location', env.helpers.uri('/conferences/detroit/questions/' + qLen));
-
-            next(env);
-          });
-        });
+        next(env);
       });
     });
   });
