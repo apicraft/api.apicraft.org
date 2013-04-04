@@ -14,7 +14,7 @@ module.exports = function(addHandler) {
       ]
     };
 
-    var rels = ['goals', 'guidelines', 'tickets', 'attendees',
+    var rels = ['goals', 'guidelines', 'agenda', 'attendees',
                 'hotels', 'sessions', 'parties', 'questions',
                 'places'];
 
