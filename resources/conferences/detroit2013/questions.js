@@ -23,9 +23,9 @@ exports.get = function(handle) {
           };
           questions.push(question);
         });
-        env.response.body = questions;
+        env.response.body = { questions: questions };
         env.response.body.links = [
-          { rel: 'self', href: env.helpers.uri('/conferences/detroit' + env.request.url) },
+          { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
           { rel: 'index', href: env.helpers.uri('home') }
         ];
         next(env);
@@ -51,7 +51,7 @@ exports.get = function(handle) {
         }
         env.response.body = q;
         env.response.body.links = [
-          { rel: 'self', href: env.helpers.uri('/conferences/detroit' + env.request.url) },
+          { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
           { rel: 'index', href: env.helpers.uri('home') }
         ];
         next(env);
@@ -74,7 +74,7 @@ exports.post = function(handle) {
 
       env.db.insert(q, function(err, doc) {
         env.response.statusCode = 201;
-        env.response.setHeader('Location', env.helpers.uri('/conferences/detroit/questions/' + doc.id));
+        env.response.setHeader('Location', env.helpers.uri('/conferences/' + env.config.location + '/questions/' + doc.id));
 
         next(env);
       });

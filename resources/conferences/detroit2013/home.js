@@ -21,7 +21,7 @@ module.exports = function(addHandler) {
     rels.forEach(function(rel) {
       body.links.push({
         rel: env.helpers.rel(rel),
-        href: env.helpers.uri('/conferences/detroit/' + rel)
+        href: env.helpers.uri('/conferences/' + env.config.location + '/' + rel)
       });
     });
 
