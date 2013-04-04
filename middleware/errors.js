@@ -1,5 +1,3 @@
-var helpers = require('../helpers');
-
 module.exports = function(addHandler) {
   addHandler('response', function(env, next) {
     var body;
@@ -15,7 +13,7 @@ module.exports = function(addHandler) {
           error: errors[env.response.statusCode]
         },
         links: [
-          { rel: ['self'], href: helpers.uri(env.request.url) }
+          { rel: ['self'], href: env.helpers.uri(env.request.url) }
         ]
       };
       env.response.body = JSON.stringify(body);

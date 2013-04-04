@@ -1,8 +1,8 @@
-var detroit = require('./conferences/detroit');
+var detroit = require('./detroit');
 
 module.exports = function(server) {
   server
-    .get('/', require('./conferences/home'))
+    .get('/', require('./home'))
     .map('/detroit', function(srv) {
       srv
         .get('/', detroit.home)
@@ -11,6 +11,8 @@ module.exports = function(server) {
         .get('/sessions', detroit.sessions)
         .get('/tickets', detroit.tickets)
         .get('/places', detroit.places)
+        .get('/questions', detroit.questions.get)
+        .post('/questions', detroit.questions.post)
     });
 };
 
