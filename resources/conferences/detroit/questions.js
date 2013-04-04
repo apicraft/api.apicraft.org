@@ -1,6 +1,4 @@
 var querystring = require('querystring');
-var msgpack = require('msgpack-js');
-var helpers = require('../../../helpers');
 
 exports.get = function(handle) {
   handle('request', function(env, next) {
@@ -66,7 +64,7 @@ exports.post = function(handle) {
         env.medea.put(key, msgpack.encode(q), function(err) {
           env.medea.put('questions:list', msgpack.encode(questions), function(err) {
             env.response.statusCode = 201;
-            env.response.setHeader('Location', helpers.uri('/conferences/detroit/questions/' + qLen));
+            env.response.setHeader('Location', env.helpers.uri('/conferences/detroit/questions/' + qLen));
 
             next(env);
           });
