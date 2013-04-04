@@ -24,6 +24,10 @@ exports.get = function(handle) {
           questions.push(question);
         });
         env.response.body = questions;
+        env.response.body.links = [
+          { rel: 'self', href: env.helpers.uri('/conferences/detroit' + env.request.url) },
+          { rel: 'index', href: env.helpers.uri('home') }
+        ];
         next(env);
       });
     } else {
@@ -46,6 +50,10 @@ exports.get = function(handle) {
           status: body.status
         }
         env.response.body = q;
+        env.response.body.links = [
+          { rel: 'self', href: env.helpers.uri('/conferences/detroit' + env.request.url) },
+          { rel: 'index', href: env.helpers.uri('home') }
+        ];
         next(env);
       });
     }
