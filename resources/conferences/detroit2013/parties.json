@@ -1,0 +1,28 @@
+{
+	"parties":[
+		{
+			"name":"Pre Party",
+			"what":["cash bar", "food"],
+			"when":"Monday, July 29th, 8pm - ???",
+			"where":"???"
+		},
+		{
+			"name":"Rooftop Party",
+			"what":["included drinks", "food"],
+			"when":"Tuesday, July 30th, 5pm - 9pm",
+			"where":"Madison Building, 1555 Broadway, Detroit, Mi 48226"
+		},
+		{
+			"name":"Table Tennis Party",
+			"what":["cash bar"],
+			"when":"Tuesday, July 30th, 9pm - ???",
+			"where":"Drive, 1441 Woodward Ave, Detroit, Mi, 48226"
+		},
+		{
+			"name":"After Party",
+			"what":["cash bar", "food"],
+			"when":"Wednesday, July 31st, 5pm - ???",
+			"where":"???"
+		}
+	]
+}
