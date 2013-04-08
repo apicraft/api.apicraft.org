@@ -1,24 +1,9 @@
 {
   "locations": [
     {
-      "yelpID": "the-madison-building-detroit",
-      "apicraftType": "main_venue",
-      "apicraftTitle": "APICRAFTCONF",
-      "apicraftDescription": "The Main Event!"
-      
-    },
-    {
-      "yelpID": "detroit-beer-company-detroit",
-      "apicraftType": "venue",
-      "apicraftTitle": "Dinner",
-      "apicraftDescription": "Day 1 post conference drinks!"
-      
-    },
-    {
       "yelpID": "the-westin-book-cadillac-detroit-detroit",
       "apicraftType": "hotel"
     },
-    
     {
       "yelpID": "detroit-marriott-at-the-renaissance-center-detroit",
       "apicraftType": "hotel"

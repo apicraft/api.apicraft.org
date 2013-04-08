@@ -1,4 +1,4 @@
-var agenda = require('./agenda_data');
+var agenda = require('./data/agenda');
 
 module.exports = function(handle) {
   handle('request', function(env, next) {

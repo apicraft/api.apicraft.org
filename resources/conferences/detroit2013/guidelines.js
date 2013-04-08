@@ -1,4 +1,4 @@
-var guidelines = require('./guidelines_data');
+var guidelines = require('./data/guidelines');
 
 module.exports = function(handle) {
   handle('request', function(env, next) {
