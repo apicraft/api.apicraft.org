@@ -1,21 +1,15 @@
-var home = require('./home');
-var agenda = require('./agenda');
-var attendees = require('./attendees');
-var hotels = require('./hotels');
-var places = require('./places');
-var sessions = require('./sessions');
-var tickets = require('./tickets');
 var questions = require('./questions');
 
 module.exports = function(server) {
   server
-    .get('/', home)
-    .get('/agenda', agenda)
-    .get('/attendees', attendees)
-    .get('/hotels', hotels)
-    .get('/sessions', sessions)
-    .get('/tickets', tickets)
-    .get('/places', places)
+    .get('/', require('./home'))
+    .get('/agenda', require('./agenda'))
+    .get('/attendees', require('./attendees'))
+    .get('/guidelines', require('./guidelines'))
+    .get('/hotels', require('./hotels'))
+    .get('/sessions', require('./sessions'))
+    .get('/tickets', require('./tickets'))
+    .get('/places', require('./places'))
     .get('/questions', questions.get)
     .post('/questions', questions.post);
 };
