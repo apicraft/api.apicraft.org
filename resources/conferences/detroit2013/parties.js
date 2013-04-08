@@ -1,4 +1,4 @@
-var hotels = require('./data/hotels.json');
+var parties = require('./parties.json');
 
 var yelp = require('yelp').createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY,
@@ -12,8 +12,8 @@ var cached = null;
 
 module.exports = function(handle) {
   handle('request', function(env, next) {
-    var h = hotels;
-    h.links = [
+    var p = parties;
+    p.links = [
       { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
       { rel: 'index', href: env.helpers.uri('home') }
     ];
@@ -25,8 +25,8 @@ module.exports = function(handle) {
       return;
     }
 
-    var len = h.locations.length;
-    getLocations(h.locations, [], len, 0, function(err, locations) {
+    var len = p.parties.length;
+    getLocations(p.parties, [], len, 0, function(err, locations) {
       if (err) {
         console.log(err);
         env.response.statusCode = 500;

@@ -1,4 +1,4 @@
-var detroit = require('./locations/detroit.json');
+//var detroit = require('./locations/detroit.json');
 
 var yelp = require('yelp').createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY,
