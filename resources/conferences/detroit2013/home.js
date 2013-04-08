@@ -15,8 +15,7 @@ module.exports = function(addHandler) {
     };
 
     var rels = ['goals', 'guidelines', 'agenda', 'attendees',
-                'hotels', 'sessions', 'parties', 'questions',
-                'places'];
+                'hotels', 'sessions', 'parties', 'questions'];
 
     rels.forEach(function(rel) {
       body.links.push({
