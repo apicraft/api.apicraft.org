@@ -1,3 +1,4 @@
+var crypto = require('crypto');
 var Eventbrite = require('eventbrite');
 
 module.exports = function(addHandler) {
@@ -29,6 +30,12 @@ module.exports = function(addHandler) {
           a.twitter = 'https://twitter.com/' + twitterId;
         };
 
+        var hash = crypto.createHash('md5');
+        hash.update(attendee.email);
+
+        var gravatarUrl = 'http://gravatar.com/avatar/' + hash.digest('hex');
+
+        a.avatar = gravatarUrl;
         body.attendees.push(a);
       });
 
