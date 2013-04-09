@@ -26,7 +26,7 @@ exports.get = function(handle) {
         env.response.body = { questions: questions };
         env.response.body.links = [
           { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
-          { rel: 'index', href: env.helpers.uri('home') }
+          { rel: 'index', href: env.helpers.uri('/conferences/') + env.config.location }
         ];
         next(env);
       });

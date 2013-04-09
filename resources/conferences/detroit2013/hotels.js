@@ -15,7 +15,7 @@ module.exports = function(handle) {
     var h = hotels;
     h.links = [
       { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
-      { rel: 'index', href: env.helpers.uri('home') }
+      { rel: 'index', href: env.helpers.uri('/conferences/') + env.config.location }
     ];
 
     if (cached) {

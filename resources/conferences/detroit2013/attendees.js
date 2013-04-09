@@ -41,7 +41,7 @@ module.exports = function(addHandler) {
 
       body.links = [
         { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
-        { rel: 'index', href: env.helpers.uri('home') }
+        { rel: 'index', href: env.helpers.uri('/conferences/') + env.config.location }
       ];
 
       env.response.body = body;
