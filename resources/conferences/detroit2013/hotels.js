@@ -13,10 +13,6 @@ var cached = null;
 module.exports = function(handle) {
   handle('request', function(env, next) {
     var h = hotels;
-    h.links = [
-      { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
-      { rel: 'index', href: env.helpers.uri('home') }
-    ];
 
     if (cached) {
       env.response.statusCode = 200;
@@ -35,9 +31,16 @@ module.exports = function(handle) {
         return;
       }
 
-      cached = locations;
+      response = {};
+      response.links = [
+        { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
+        { rel: 'index', href: env.helpers.uri('home') }
+      ];
+      response.hotels = locations;
+      
+      cached = response;
       env.statusCode = 200;
-      env.response.body = locations;
+      env.response.body = response;
       next(env);
     });
     
@@ -50,8 +53,8 @@ function getLocations(source, dest, len, index, cb) {
     dest = [];
   }
 
-  var location = source[index];
-  if(location.yelpID) {
+  if (index < len - 1) {
+    var location = source[index];
     yelp.business(location.yelpID, function(err, data) {
       if (data && !err) {
         populateLocation(data, location);
@@ -68,14 +71,8 @@ function getLocations(source, dest, len, index, cb) {
       }
     });
   } else {
-    dest.push(location);
-    if (index < len - 1) {
-      getLocations(source, dest, len, index+1, cb);
-    } else {
-      cb(null, dest);
-    }
+    cb(null, dest);
   }
-  
 }
 
 function populateLocation(source, dest) {
