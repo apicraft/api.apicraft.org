@@ -5,10 +5,18 @@ module.exports = function(addHandler) {
       version: '1.0',
       start: 'Tue Jul 30 2013 08:00:00 GMT-0400 (EDT)',
       end: 'Wed Jul 31 2013 19:00:00 GMT-0400 (EDT)',
-      location: 'Detroit, MI',
-      spots: '150-200',
+      location: {
+        city: 'Detroit',
+        display_address: [ '1555 Broadway St', 'Downtown Detroit', 'Detroit, MI 48226' ],
+        geo_accuracy: 8,
+        neighborhoods: [ 'Downtown Detroit' ],
+        postal_code: '48226',
+        country_code: 'US',
+        address: [ '1555 Broadway St' ],
+        coordinate: { latitude: 42.3362303, longitude: -83.0491634 },
+        state_code: 'MI'
+      },
       format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
-      rules: '!corporate_logos && !product_pitches && (represent_thyself && !represent_thycompany)',
       links: [
         { rel: 'self', href: env.helpers.uri('home') }
       ]
@@ -23,6 +31,8 @@ module.exports = function(addHandler) {
         href: env.helpers.uri('/conferences/' + env.config.location + '/' + rel)
       });
     });
+
+    body.links.push({ rel: env.helpers.rel('conferences'), href: env.helpers.uri('/conferences') });
 
     env.response.body = body;
     next(env);
