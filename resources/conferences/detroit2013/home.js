@@ -18,7 +18,7 @@ module.exports = function(addHandler) {
       },
       format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
       links: [
-        { rel: 'self', href: env.helpers.uri('home') }
+        { rel: 'self', href: env.helpers.uri('/conferences/') + env.config.location }
       ]
     };
 
@@ -32,7 +32,7 @@ module.exports = function(addHandler) {
       });
     });
 
-    body.links.push({ rel: env.helpers.rel('conferences'), href: env.helpers.uri('/conferences') });
+    body.links.push({ rel: 'index', href: env.helpers.uri('home') });
 
     env.response.body = body;
     next(env);
