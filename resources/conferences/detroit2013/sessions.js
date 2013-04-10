@@ -1,6 +1,13 @@
 module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
-    env.response.statusCode = 204;
+  	var sessions = {};
+  	sessions.links = [
+      { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
+      { rel: 'index', href: env.helpers.uri('/conferences/') + env.config.location }
+    ];
+    sessions.sessions = [{"description":"Sessions will be posted after the conference"}];
+    env.response.statusCode = 200;
+    env.response.body = sessions;
     next(env);
   });
 };

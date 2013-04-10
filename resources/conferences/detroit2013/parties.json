@@ -4,27 +4,31 @@
 			"name":"Pre Party",
 			"what":["cash bar", "food"],
 			"when":"Monday, July 29th, 8pm - ???",
-			"where":"???"
+			"where":"???",
+			"image":"http://api.apicraft.org/images/Pre_Party.jpg"
 		},
 		{
 			"name":"Rooftop Party",
 			"what":["included drinks", "food"],
 			"when":"Tuesday, July 30th, 5pm - 9pm",
 			"where":"Madison Building, 1555 Broadway, Detroit, Mi 48226",
-			"yelpID": "the-madison-building-detroit"
+			"yelpID": "the-madison-building-detroit",
+			"image":"http://api.apicraft.org/images/Rooftop_Party.jpg"
 		},
 		{
 			"name":"Table Tennis Party",
 			"what":["cash bar"],
 			"when":"Tuesday, July 30th, 9pm - ???",
 			"where":"Drive, 1441 Woodward Ave, Detroit, Mi, 48226",
-			"yelpID":"drive-table-tennis-social-club-detroit"
+			"yelpID":"drive-table-tennis-social-club-detroit",
+			"image":"http://api.apicraft.org/images/Table_Tennis_Party.jpg"
 		},
 		{
 			"name":"After Party",
 			"what":["cash bar", "food"],
 			"when":"Wednesday, July 31st, 5pm - ???",
-			"where":"???"
+			"where":"???",
+			"image":"http://api.apicraft.org/images/After_Party.jpg"
 		}
 	]
 }
