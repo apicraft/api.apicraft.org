@@ -21,14 +21,14 @@
       "when":"Tuesday, July 30th, 9pm - ???",
       "where":"Drive, 1441 Woodward Ave, Detroit, Mi, 48226",
       "yelpID":"drive-table-tennis-social-club-detroit",
-      "image":"http://api.apicraft.org/images/Table_Tennis_Party.jpg"
+      "image":"http://apicraft.org/content/detroit2013/Table_Tennis_Party.jpg"
     },
     {
       "name":"After Party",
       "what":["cash bar", "food"],
       "when":"Wednesday, July 31st, 5pm - ???",
       "where":"???",
-      "image":"http://api.apicraft.org/images/After_Party.jpg"
+      "image":"http://apicraft.org/content/detroit2013/After_Party.jpg"
     }
   ]
 }
