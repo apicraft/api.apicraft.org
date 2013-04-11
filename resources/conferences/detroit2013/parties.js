@@ -1,4 +1,4 @@
-var parties = require('./parties.json');
+var parties = require('./data/parties');
 
 var yelp = require('yelp').createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY,
