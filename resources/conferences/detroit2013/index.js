@@ -10,6 +10,7 @@ module.exports = function(server) {
     .get('/sessions', require('./sessions'))
     .get('/parties', require('./parties'))
     .get('/goals', require('./goals'))
+    .get('/transit', require('./transit'))
     .get('/questions', questions.get)
     .post('/questions', questions.post);
 };

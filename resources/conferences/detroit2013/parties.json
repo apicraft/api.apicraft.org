@@ -5,7 +5,7 @@
 			"what":["cash bar", "food"],
 			"when":"Monday, July 29th, 8pm - ???",
 			"where":"???",
-			"image":"http://api.apicraft.org/images/Pre_Party.jpg"
+			"image":"http://apicraft.org/content/detroit2013/Pre_Party.jpg"
 		},
 		{
 			"name":"Rooftop Party",
@@ -13,7 +13,7 @@
 			"when":"Tuesday, July 30th, 5pm - 9pm",
 			"where":"Madison Building, 1555 Broadway, Detroit, Mi 48226",
 			"yelpID": "the-madison-building-detroit",
-			"image":"http://api.apicraft.org/images/Rooftop_Party.jpg"
+			"image":"http://apicraft.org/content/detroit2013/Rooftop_Party.jpg"
 		},
 		{
 			"name":"Table Tennis Party",
