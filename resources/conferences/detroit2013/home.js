@@ -5,6 +5,7 @@ module.exports = function(addHandler) {
       version: '1.0',
       start: 'Tue Jul 30 2013 08:00:00 GMT-0400 (EDT)',
       end: 'Wed Jul 31 2013 19:00:00 GMT-0400 (EDT)',
+      theme: 'Where do we lead the APIs of tomorrow?',
       location: {
         city: 'Detroit',
         display_address: [ '1555 Broadway St', 'Downtown Detroit', 'Detroit, MI 48226' ],
