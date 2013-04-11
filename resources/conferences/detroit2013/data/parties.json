@@ -1,33 +1,35 @@
 {
   "parties":[
     {
-      "name":"Pre Party",
-      "what":["cash bar", "food"],
-      "when":"Monday, July 29th, 8pm - ???",
-      "where":"???",
+      "name":"Pre-Party",
+      "what":["cash bar"],
+      "when":"Monday, July 29th, 8pm - Midnight",
+      "where":"Foran's Grand Trunk Pub, 612 Woodward Ave, Detroit, MI 48226",
+      "yelpID":"forans-grand-trunk-pub-detroit-2",
       "image":"http://apicraft.org/content/detroit2013/Pre_Party.jpg"
     },
     {
-      "name":"Rooftop Party",
-      "what":["included drinks", "food"],
+      "name":"Rooftop Dinner & Drinks",
+      "what":["free drinks", "free food"],
       "when":"Tuesday, July 30th, 5pm - 9pm",
-      "where":"Madison Building, 1555 Broadway, Detroit, Mi 48226",
+      "where":"Madison Building Rooftop, 1555 Broadway, Detroit, MI 48226",
       "yelpID": "the-madison-building-detroit",
       "image":"http://apicraft.org/content/detroit2013/Rooftop_Party.jpg"
     },
     {
       "name":"Table Tennis Party",
       "what":["cash bar"],
-      "when":"Tuesday, July 30th, 9pm - ???",
-      "where":"Drive, 1441 Woodward Ave, Detroit, Mi, 48226",
+      "when":"Tuesday, July 30th, 9pm - Midnight",
+      "where":"Drive, 1441 Woodward Ave, Detroit, MI, 48226",
       "yelpID":"drive-table-tennis-social-club-detroit",
       "image":"http://apicraft.org/content/detroit2013/Table_Tennis_Party.jpg"
     },
     {
-      "name":"After Party",
-      "what":["cash bar", "food"],
-      "when":"Wednesday, July 31st, 5pm - ???",
-      "where":"???",
+      "name":"Closing Party",
+      "what":["cash bar"],
+      "when":"Wednesday, July 31st, 5pm - 8pm",
+      "where":"Angelina Italian Bistro, 1565 Broadway, Detroit, MI 48226",
+      "yelpID":"angelina-italian-bistro-detroit",
       "image":"http://apicraft.org/content/detroit2013/After_Party.jpg"
     }
   ]
