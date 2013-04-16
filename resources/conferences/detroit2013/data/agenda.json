@@ -54,6 +54,12 @@
     "location": "The Madison Roof"
   },
   {
+    "title": "Day 1 After-Party",
+    "start": "Tuesday, July 30, 2013 9:00 PM",
+    "end": "Tuesday, July 30, 2013 11:59 PM",
+    "location": "Drive"
+  },
+  {
     "title": "Morning Announcements",
     "start": "Wednesday, July 31, 2013 9:30 AM",
     "end": "Wednesday, July 31, 2013 10:30 AM",
@@ -88,11 +94,5 @@
     "start": "Wednesday, July 31, 2013 4:30 PM",
     "end": "Wednesday, July 31, 2013 5:00 PM",
     "location": "The Madison"
-  },
-  {
-    "title": "Day 2 Party",
-    "start": "Wednesday, July 31, 2013 5:00 PM",
-    "end": "Wednesday, July 31, 2013 9:00 PM",
-    "location": "Drive"
   }
 ]
