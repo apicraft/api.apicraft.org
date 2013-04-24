@@ -21,18 +21,23 @@ module.exports = function(addHandler) {
           lastName: attendee.last_name 
         };
 
-        if (attendee.answers[1]) {
-          var githubId = attendee.answers[1].answer.answer_text;
-          if (githubId) {
-            a.github = 'https://github.com/' + githubId;
+        var githubId;
+        var twitterId;
+
+        attendee.answers.forEach(function(answer) {
+          if (answer.answer.question_id === 3613606) {
+            twitterId = answer.answer.answer_text;
+          } else if (answer.answer.question_id === 3811101) {
+            githubId = answer.answer.answer_text;
           }
+        });
+
+        if (githubId) {
+          a.github = 'https://github.com/' + githubId;
         }
 
-        if (attendee.answers[2]) {
-          var twitterId = attendee.answers[2].answer.answer_text;
-          if (twitterId) {
-            a.twitter = 'https://twitter.com/' + twitterId;
-          };
+        if (twitterId) {
+          a.twitter = 'https://twitter.com/' + twitterId;
         }
 
         var hash = crypto.createHash('md5');
