@@ -27,7 +27,7 @@ module.exports = function(addHandler) {
           }
         }
 
-        if (attendees.answers[2]) {
+        if (attendee.answers[2]) {
           var twitterId = attendee.answers[2].answer.answer_text;
           if (twitterId) {
             a.twitter = 'https://twitter.com/' + twitterId;
