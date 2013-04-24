@@ -20,7 +20,7 @@ module.exports = function(addHandler) {
           lastName: attendee.last_name 
         };
 
-        if (attendee.answres[1]) {
+        if (attendee.answers[1]) {
           var githubId = attendee.answers[1].answer.answer_text;
           if (githubId) {
             a.github = 'https://github.com/' + githubId;
