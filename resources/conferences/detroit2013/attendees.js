@@ -20,15 +20,19 @@ module.exports = function(addHandler) {
           lastName: attendee.last_name 
         };
 
-        var githubId = attendee.answers[1].answer.answer_text;
-        if (githubId) {
-          a.github = 'https://github.com/' + githubId;
+        if (attendee.answres[1]) {
+          var githubId = attendee.answers[1].answer.answer_text;
+          if (githubId) {
+            a.github = 'https://github.com/' + githubId;
+          }
         }
 
-        var twitterId = attendee.answers[2].answer.answer_text;
-        if (twitterId) {
-          a.twitter = 'https://twitter.com/' + twitterId;
-        };
+        if (attendees.answers[2]) {
+          var twitterId = attendee.answers[2].answer.answer_text;
+          if (twitterId) {
+            a.twitter = 'https://twitter.com/' + twitterId;
+          };
+        }
 
         var hash = crypto.createHash('md5');
         hash.update(attendee.email);
