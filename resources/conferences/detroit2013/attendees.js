@@ -15,7 +15,7 @@ module.exports = function(addHandler) {
 
       data.attendees.forEach(function(attendee) {
         attendee = attendee.attendee;
-        console.log(attendee);
+        console.log(attendee.answers);
         var a = {
           firstName: attendee.first_name,
           lastName: attendee.last_name 
