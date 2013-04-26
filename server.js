@@ -1,4 +1,4 @@
-var argo = require('argo-server');
+var argo = require('argo');
 var config = require('./config');
 var middleware = require('./middleware');
 var resources = require('./resources');
