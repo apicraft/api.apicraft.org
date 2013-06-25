@@ -53,7 +53,7 @@ function getLocations(source, dest, len, index, cb) {
     dest = [];
   }
 
-  if (index < len - 1) {
+  if (index < len) {
     var location = source[index];
     yelp.business(location.yelpID, function(err, data) {
       if (data && !err) {
