@@ -21,7 +21,8 @@
     "argo": ">= 0.1.3",
     "yelp": "~0.1.1",
     "nano": "~3.3.8",
-    "eventbrite": "~0.1.6"
+    "eventbrite": "~0.1.6",
+    "request": "~2.21.0"
   },
   "engines": {
     "node": ">= v0.8.x",

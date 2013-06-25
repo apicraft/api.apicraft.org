@@ -1,4 +1,5 @@
 var querystring = require('querystring');
+var request = require('request');
 
 exports.get = function(handle) {
   handle('request', function(env, next) {
@@ -76,7 +77,24 @@ exports.post = function(handle) {
         env.response.statusCode = 201;
         env.response.setHeader('Location', env.helpers.uri('/conferences/' + env.config.location + '/questions/' + doc.id));
 
-        next(env);
+        var opts = {
+          method: 'POST',
+          form: {
+            from: 'API Craft Conf <detroit2013@api-craft.org>',
+            to: 'organizers@api-craft.mailgun.org',
+            subject: 'New API Craft Conference Question: ' + q.question,
+            text: 'Q: ' + q.question + '\n\nRespond: ' + env.config.mailgun.responseUrl
+          },
+          auth: {
+            username: env.config.mailgun.username,
+            password: env.config.mailgun.password
+          },
+          uri: env.config.mailgun.uri,
+        };
+
+        request(opts, function() {
+          next(env);
+        });
       });
     });
   });
