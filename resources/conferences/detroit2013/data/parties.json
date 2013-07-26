@@ -1,8 +1,8 @@
 {
   "parties":[
     {
-      "name1":"Pre-Party (fair weather)",
-      "what":["fair weather (otherwise Foran's)", "cash bar"],
+      "name":"Pre-Party (fair weather)",
+      "what":["cash bar"],
       "when":"Monday, July 29th, 8pm - Midnight",
       "where":"Campus Martius Park, 800 Woodward Ave, Detroit, MI 48226",
       "yelpID":"campus-martius-park-detroit",
@@ -10,7 +10,7 @@
     },
     {
       "name":"Pre-Party (foul weather)",
-      "what":["foul weather (otherwise Campus Martius)", "cash bar"],
+      "what":["cash bar"],
       "when":"Monday, July 29th, 8pm - Midnight",
       "where":"Foran's Grand Trunk Pub, 612 Woodward Ave, Detroit, MI 48226",
       "yelpID":"forans-grand-trunk-pub-detroit-2",
