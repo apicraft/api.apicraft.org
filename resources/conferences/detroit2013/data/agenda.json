@@ -6,7 +6,7 @@
     "location": "Campus Martius (or Foran's)"
   },
   {
-    "title": "Registration",
+    "title": "Registration & Breakfast",
     "start": "Tuesday, July 30, 2013 8:00 AM",
     "end": "Tuesday, July 30, 2013 9:00 AM",
     "location": "The Madison"
@@ -58,6 +58,12 @@
     "start": "Tuesday, July 30, 2013 9:00 PM",
     "end": "Tuesday, July 30, 2013 11:55 PM",
     "location": "Drive"
+  },
+  {
+    "title": "Breakfast",
+    "start": "Wednesday, July 31, 2013 8:00 AM",
+    "end": "Wednesday, July 31, 2013 9:30 AM",
+    "location": "The Madison"
   },
   {
     "title": "Morning Announcements",
