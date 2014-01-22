@@ -18,11 +18,12 @@
   "author": "Kevin Swiber <kswiber@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "argo": ">= 0.1.3",
+    "argo": ">= 0.4.9",
     "yelp": "~0.1.1",
     "nano": "~3.3.8",
     "eventbrite": "~0.1.6",
-    "request": "~2.21.0"
+    "request": "~2.21.0",
+    "titan": "~0.1.1"
   },
   "engines": {
     "node": ">= v0.8.x",
