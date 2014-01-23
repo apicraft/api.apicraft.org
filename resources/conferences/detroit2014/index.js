@@ -1,16 +1,19 @@
 var questions = require('./questions');
+var titan = require('titan');
 
 module.exports = function(server) {
   server
+    .use(titan)
+    .add(require('./agenda'))
+    .add(require('./guidelines'))
+    .add(require('./sessions'))
+    .add(require('./goals'))
+    .add(require('./transit'))
     .get('/', require('./home'))
-    .get('/agenda', require('./agenda'))
     .get('/attendees', require('./attendees'))
-    .get('/guidelines', require('./guidelines'))
     .get('/hotels', require('./hotels'))
-    .get('/sessions', require('./sessions'))
     .get('/parties', require('./parties'))
-    .get('/goals', require('./goals'))
-    .get('/transit', require('./transit'))
     .get('/questions', questions.get)
-    .post('/questions', questions.post);
+    .post('/questions', questions.post)
+    ._wire();
 };

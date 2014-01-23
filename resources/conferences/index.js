@@ -1,7 +1,7 @@
-var detroit2013 = require('./detroit2013');
+var detroit2014 = require('./detroit2014');
 
 module.exports = function(server) {
   server
     .get('/', require('./home'))
-    .map('/detroit2013', detroit2013);
+    .map('/detroit2014', detroit2014);
 };

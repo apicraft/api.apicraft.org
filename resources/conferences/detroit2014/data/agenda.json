@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Pre-party",
+    "start": "Monday, July 28, 2013 8:00 PM",
+    "end": "Monday, July 28, 2013 11:55 PM",
+    "location": "Campus Martius (or Foran's)"
+  },
+  {
+    "title": "Registration",
+    "start": "Tuesday, July 29, 2013 8:00 AM",
+    "end": "Tuesday, July 29, 2013 9:00 AM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Opening Session",
+    "start": "Tuesday, July 29, 2013 9:00 AM",
+    "end": "Tuesday, July 29, 2013 10:29 AM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Morning Sessions",
+    "start": "Tuesday, July 29, 2013 10:29 AM",
+    "end": "Tuesday, July 29, 2013 12:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Lunch",
+    "start": "Tuesday, July 29, 2013 12:00 PM",
+    "end": "Tuesday, July 29, 2013 1:29 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Afternoon Sessions 1",
+    "start": "Tuesday, July 29, 2013 1:29 PM",
+    "end": "Tuesday, July 29, 2013 3:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Afternoon Sessions 2",
+    "start": "Tuesday, July 29, 2013 3:00 PM",
+    "end": "Tuesday, July 29, 2013 4:29 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Evening News",
+    "start": "Tuesday, July 29, 2013 4:29 PM",
+    "end": "Tuesday, July 29, 2013 5:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Day 1 Party",
+    "start": "Tuesday, July 29, 2013 5:00 PM",
+    "end": "Tuesday, July 29, 2013 9:00 PM",
+    "location": "Infinity Ovation"
+  },
+  {
+    "title": "Day 1 After-Party",
+    "start": "Tuesday, July 29, 2013 9:00 PM",
+    "end": "Tuesday, July 29, 2013 11:55 PM",
+    "location": "Volt Lounge"
+  },
+  {
+    "title": "Morning Announcements",
+    "start": "Wednesday, July 30, 2013 9:29 AM",
+    "end": "Wednesday, July 30, 2013 10:29 AM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Morning Sessions",
+    "start": "Wednesday, July 30, 2013 10:29 AM",
+    "end": "Wednesday, July 30, 2013 12:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Lunch",
+    "start": "Wednesday, July 30, 2013 12:00 PM",
+    "end": "Wednesday, July 30, 2013 1:29 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Afternoon Sessions 1",
+    "start": "Wednesday, July 30, 2013 1:29 PM",
+    "end": "Wednesday, July 30, 2013 3:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Afternoon Sessions 2",
+    "start": "Wednesday, July 30, 2013 3:00 PM",
+    "end": "Wednesday, July 30, 2013 4:29 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Closing Session",
+    "start": "Wednesday, July 30, 2013 4:29 PM",
+    "end": "Wednesday, July 30, 2013 5:00 PM",
+    "location": "Port Detroit"
+  },
+  {
+    "title": "Day 2 Party",
+    "start": "Wednesday, July 30, 2013 5:00 PM",
+    "end": "Wednesday, July 30, 2013 8:00 PM",
+    "location": "Andiamo"
+  }
+]
