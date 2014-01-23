@@ -2,18 +2,18 @@ module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
     var body = {
       name: 'API Craft Conference',
-      version: '1.0',
-      start: 'Tue Jul 30 2013 08:00:00 GMT-0400 (EDT)',
-      end: 'Wed Jul 31 2013 19:00:00 GMT-0400 (EDT)',
-      theme: 'Where do we lead the APIs of tomorrow?',
+      version: '2.0',
+      start: 'Tue Jul 29 2013 08:00:00 GMT-0400 (EDT)',
+      end: 'Wed Jul 30 2013 19:00:00 GMT-0400 (EDT)',
+      theme: 'From API Design to App Development',
       location: {
         city: 'Detroit',
-        display_address: [ '1555 Broadway St', 'Downtown Detroit', 'Detroit, MI 48226' ],
+        display_address: [ '130 E Atwater St', 'Downtown Detroit', 'Detroit, MI 48226' ],
         geo_accuracy: 8,
         neighborhoods: [ 'Downtown Detroit' ],
         postal_code: '48226',
         country_code: 'US',
-        address: [ '1555 Broadway St' ],
+        address: [ '130 E Atwater St' ],
         coordinate: { latitude: 42.3362303, longitude: -83.0491634 },
         state_code: 'MI'
       },
