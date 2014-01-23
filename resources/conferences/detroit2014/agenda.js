@@ -12,11 +12,11 @@ Agenda.prototype.init = function(config) {
 
 Agenda.prototype.list = function(env, next) {
   env.response.statusCode = 200;
+  env.response.body = this.agenda;
   env.response.body.links = [
     { rel: 'self', href: env.helpers.uri('/conferences/' + env.config.location + env.request.url) },
     { rel: 'index', href: env.helpers.uri('/conferences/') + env.config.location }
   ];
-  env.response.body = this.agenda;
   next(env);
 };
 

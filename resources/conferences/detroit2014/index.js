@@ -14,5 +14,6 @@ module.exports = function(server) {
     .get('/hotels', require('./hotels'))
     .get('/parties', require('./parties'))
     .get('/questions', questions.get)
-    .post('/questions', questions.post);
+    .post('/questions', questions.post)
+    ._wire();
 };
