@@ -51,7 +51,7 @@ function getLocations(source, dest, len, index, cb) {
   }
 
   var location = source[index];
-  if(location.yelpID) {
+  if(location && location.yelpID) {
     yelp.business(location.yelpID, function(err, data) {
       if (data && !err) {
         populateLocation(data, location);
