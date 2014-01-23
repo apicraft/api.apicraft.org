@@ -7,8 +7,8 @@ var server = argo()
   .use(middleware.config(config))
   .use(middleware.helpers)
   .use(middleware.database)
-  .use(middleware.cors)
   .use(middleware.errors)
+  .use(middleware.cors)
   .get('/', resources.home)
   .map('/conferences', resources.conferences);
 
