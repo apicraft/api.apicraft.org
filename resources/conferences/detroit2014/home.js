@@ -14,7 +14,7 @@ module.exports = function(addHandler) {
         postal_code: '48226',
         country_code: 'US',
         address: [ '130 E Atwater St' ],
-        coordinate: { latitude: 42.3362303, longitude: -83.0491634 },
+        coordinate: { latitude:  42.327278, longitude: -83.041668 },
         state_code: 'MI'
       },
       format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
