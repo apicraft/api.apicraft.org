@@ -6,6 +6,7 @@ module.exports = function(addHandler) {
       start: 'Tue Jul 29 2014 08:00:00 GMT-0400 (EDT)',
       end: 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
       theme: 'From API Design to App Development',
+      image: 'port-detroit.jpg',
       location: {
         city: 'Detroit',
         display_address: [ '130 E Atwater St', 'Downtown Detroit', 'Detroit, MI 48226' ],

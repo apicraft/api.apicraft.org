@@ -62,6 +62,8 @@ function getLocations(source, dest, len, index, cb) {
           cb(null, dest);
         }
       } else {
+        console.log(location.yelpID);
+        console.log(err);
         // Swallow errors for now.  Sometimes, they're dumb.
         getLocations(source, dest, len, index+1, cb);
         //cb(err);
