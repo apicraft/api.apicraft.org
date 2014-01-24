@@ -8,6 +8,7 @@ module.exports = function(addHandler) {
       theme: 'From API Design to App Development',
       image: 'port-detroit.jpg',
       location: {
+        display_name:'Port Detroit',
         city: 'Detroit',
         display_address: [ '130 E Atwater St', 'Downtown Detroit', 'Detroit, MI 48226' ],
         geo_accuracy: 8,
