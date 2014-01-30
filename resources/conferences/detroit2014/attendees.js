@@ -41,7 +41,7 @@ module.exports = function(addHandler) {
         }
 
         var hash = crypto.createHash('md5');
-        hash.update(attendee.email);
+        hash.update(attendee.email.toLowerCase());
 
         var gravatarUrl = 'http://gravatar.com/avatar/' + hash.digest('hex');
 
