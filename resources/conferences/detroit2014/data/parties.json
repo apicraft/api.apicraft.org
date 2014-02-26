@@ -1,7 +1,7 @@
 {
   "parties":[
     {
-      "name":"Pre-Party (fair weather)",
+      "name":"Kick Off Party (fair weather)",
       "what":["cash bar"],
       "when":"Monday, July 28th, 8pm - Midnight",
       "where":"Campus Martius Park, 800 Woodward Ave, Detroit, MI 48226",
@@ -9,7 +9,7 @@
       "image":"http://apicraft.org/content/detroit2014/Pre_Party_Martius.jpg"
     },
     {
-      "name":"Pre-Party (if rain)",
+      "name":"Kick Off Party (if rain)",
       "what":["cash bar"],
       "when":"Monday, July 28th, 8pm - Midnight",
       "where":"Foran's Grand Trunk Pub, 612 Woodward Ave, Detroit, MI 48226",
