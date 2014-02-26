@@ -24,9 +24,10 @@ module.exports = function(addHandler) {
         var twitterId;
 
         attendee.answers.forEach(function(answer) {
-          if (answer.answer.question_id === 3613606) {
+          console.log(answer);
+          if (answer.answer.question_id === 4546963) {
             twitterId = answer.answer.answer_text;
-          } else if (answer.answer.question_id === 3811101) {
+          } else if (answer.answer.question_id === 4546967) {
             githubId = answer.answer.answer_text;
           }
         });
@@ -40,7 +41,7 @@ module.exports = function(addHandler) {
         }
 
         var hash = crypto.createHash('md5');
-        hash.update(attendee.email);
+        hash.update(attendee.email.toLowerCase());
 
         var gravatarUrl = 'http://gravatar.com/avatar/' + hash.digest('hex');
 
