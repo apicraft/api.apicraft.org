@@ -26,7 +26,7 @@ module.exports = function(addHandler) {
 				yelp_url: 'http://www.yelp.com/biz/grand-circus-detroit'
 			},
 			{ 
-				name: 'API Craft Conference',
+				name: 'Open Space Conference',
 				identifier: 2,
 				version: '2.0',
 				start: "Tuesday July 29th, 2014 8am", // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
