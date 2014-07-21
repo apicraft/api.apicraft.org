@@ -1,6 +1,6 @@
 module.exports = function(addHandler) {
   addHandler('request', function(env, next) {
-    var body = {
+    var body = [{
       name: 'API Craft Conference',
       version: '2.0',
       start: 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
@@ -23,7 +23,7 @@ module.exports = function(addHandler) {
       links: [
         { rel: 'self', href: env.helpers.uri('/conferences/') + env.config.location }
       ]
-    };
+    }];
 
     var rels = ['goals', 'guidelines', 'agenda', 'attendees',
                 'hotels', 'sessions', 'parties', 'questions', 'transit'];
