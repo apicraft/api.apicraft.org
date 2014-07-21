@@ -42,9 +42,9 @@ module.exports = function(addHandler) {
 					coordinate: { latitude:  42.335866, longitude: -83.049689 },
 					state_code: 'MI'
 				},
-				format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
+				format: 'Panel Discussion <http://en.wiktionary.org/wiki/panel_discussion>',
 			}
-			]
+			],
 			links: [
 			{ rel: 'self', href: env.helpers.uri('/conferences/') + env.config.location }
 			]
