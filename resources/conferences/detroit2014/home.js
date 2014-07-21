@@ -23,6 +23,7 @@ module.exports = function(addHandler) {
 					state_code: 'MI'
 				},
 				format: 'Panel Discussion <http://en.wiktionary.org/wiki/panel_discussion>',
+				yelp_url: 'http://www.yelp.com/biz/grand-circus-detroit'
 			},
 			{ 
 				name: 'API Craft Conference',
@@ -45,6 +46,7 @@ module.exports = function(addHandler) {
 					state_code: 'MI'
 				},
 				format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
+				yelp_url: 'http://www.yelp.com/biz/waterview-loft-at-port-detroit-detroit'
 			}
 			],
 			links: [
