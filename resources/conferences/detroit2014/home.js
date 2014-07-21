@@ -6,8 +6,8 @@ module.exports = function(addHandler) {
 				name: 'Hypermedia Panel',
 				identifier: 1,
 				version: '1.0',
-				start: "July 28, 2014 1pm", // 'Mon Jul 28 2014 13:00:00 GMT-0400 (EDT)',
-				end: "July 28, 2014 7pm", // 'Mon Jul 28 2014 20:00:00 GMT-0400 (EDT)',
+				start: "Monday July 28th, 2014 1pm EDT", // 'Mon Jul 28 2014 13:00:00 GMT-0400 (EDT)',
+				end: "Monday July 28th, 2014 7pm EDT", // 'Mon Jul 28 2014 20:00:00 GMT-0400 (EDT)',
 				theme: 'Where do we lead the hypermedia APIs of tomorrow?',
 				image: 'grand-circus.jpg',
 				location: {
@@ -29,8 +29,8 @@ module.exports = function(addHandler) {
 				name: 'API Craft Conference',
 				identifier: 2,
 				version: '2.0',
-				start: "July 29, 2014 8am", // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
-				end: "July 30, 2014 7pm", // 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
+				start: "Tuesday July 29th, 2014 8am EDT", // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
+				end: "Wednesday July 30th, 2014 7pm EDT", // 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
 				theme: 'Where do we lead the APIs of tomorrow?',
 				image: 'port-detroit.jpg',
 				location: {
