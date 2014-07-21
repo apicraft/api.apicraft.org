@@ -6,8 +6,8 @@ module.exports = function(addHandler) {
 				name: 'Hypermedia Panel',
 				identifier: 1,
 				version: '1.0',
-				start: JSON.stringify(new Date("July 28, 2014 13:00:00")); // 'Mon Jul 28 2014 13:00:00 GMT-0400 (EDT)',
-				end: JSON.stringify(new Date("July 28, 2014 19:00:00")); // 'Mon Jul 28 2014 20:00:00 GMT-0400 (EDT)',
+				start: JSON.stringify(new Date("July 28, 2014 13:00:00")), // 'Mon Jul 28 2014 13:00:00 GMT-0400 (EDT)',
+				end: JSON.stringify(new Date("July 28, 2014 19:00:00")), // 'Mon Jul 28 2014 20:00:00 GMT-0400 (EDT)',
 				theme: 'Where do we lead the hypermedia APIs of tomorrow?',
 				image: 'grand-circus.jpg',
 				location: {
@@ -29,8 +29,8 @@ module.exports = function(addHandler) {
 				name: 'API Craft Conference',
 				identifier: 2,
 				version: '2.0',
-				start: JSON.stringify(new Date("July 29, 2014 08:00:00")); // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
-				end: JSON.stringify(new Date("July 30, 2014 20:00:00")); // 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
+				start: JSON.stringify(new Date("July 29, 2014 08:00:00")), // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
+				end: JSON.stringify(new Date("July 30, 2014 20:00:00")), // 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
 				theme: 'Where do we lead the APIs of tomorrow?',
 				image: 'port-detroit.jpg',
 				location: {
