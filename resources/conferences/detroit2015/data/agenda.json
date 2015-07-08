@@ -9,97 +9,103 @@
     "title": "Breakfast",
     "start": "Tuesday, July 28, 2015 8:00 AM",
     "end": "Tuesday, July 28, 2015 9:00 AM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Opening Session",
     "start": "Tuesday, July 28, 2015 9:00 AM",
     "end": "Tuesday, July 28, 2015 10:30 AM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
+  },
+  {
+    "title": "Casual Hacking Area",
+    "start": "Tuesday, July 28, 2015 10:30 AM",
+    "end": "Tuesday, July 28, 2015 4:30 PM",
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Morning Sessions 1",
     "start": "Tuesday, July 28, 2015 10:30 AM",
     "end": "Tuesday, July 28, 2015 12:00 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Lunch",
     "start": "Tuesday, July 28, 2015 12:00 PM",
     "end": "Tuesday, July 28, 2015 1:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Afternoon Sessions 1",
     "start": "Tuesday, July 28, 2015 1:30 PM",
     "end": "Tuesday, July 28, 2015 3:00 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Afternoon Sessions 2",
     "start": "Tuesday, July 28, 2015 3:00 PM",
     "end": "Tuesday, July 28, 2015 4:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Evening News",
     "start": "Tuesday, July 28, 2015 4:30 PM",
     "end": "Tuesday, July 28, 2015 5:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
-    "title": "Dinner & Drinks on Yacht",
-    "start": "Tuesday, July 28, 2015 5:30 PM",
-    "end": "Tuesday, July 28, 2015 8:00 PM",
-    "location": "Board Yacht at Port Detroit - 130 E Atwater St, Detroit"
-  },
-  {
-    "title": "Party",
-    "start": "Tuesday, July 28, 2015 8:00 PM",
+    "title": "Dinner & Drinks",
+    "start": "Tuesday, July 28, 2015 6:00 PM",
     "end": "Tuesday, July 28, 2015 11:00 PM",
-    "location": "Volt Lounge - 400 Renaissance Center, Detroit"
+    "location": "TBD"
   },
   {
     "title": "Breakfast & Announcements",
     "start": "Wednesday, July 29, 2015 8:00 AM",
     "end": "Wednesday, July 29, 2015 9:00 AM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
+  },
+  {
+    "title": "Casual Hacking Area",
+    "start": "Tuesday, July 28, 2015 9:00 AM",
+    "end": "Tuesday, July 28, 2015 4:30 PM",
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Morning Sessions 1",
     "start": "Wednesday, July 29, 2015 9:00 AM",
     "end": "Wednesday, July 29, 2015 10:30 AM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Morning Sessions 2",
     "start": "Wednesday, July 29, 2015 10:30 AM",
     "end": "Wednesday, July 29, 2015 12:00 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Lunch",
     "start": "Wednesday, July 29, 2015 12:00 PM",
     "end": "Wednesday, July 29, 2015 1:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Afternoon Sessions 1",
     "start": "Wednesday, July 29, 2015 1:30 PM",
     "end": "Wednesday, July 29, 2015 3:00 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Afternoon Sessions 2",
     "start": "Wednesday, July 29, 2015 3:00 PM",
     "end": "Wednesday, July 29, 2015 4:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 2nd Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Closing Session",
     "start": "Wednesday, July 29, 2015 4:30 PM",
     "end": "Wednesday, July 29, 2015 5:30 PM",
-    "location": "Port Detroit - 130 E Atwater St, Detroit"
+    "location": "Port Detroit - 1st Floor - 130 E Atwater St, Detroit"
   },
   {
     "title": "Dinner & Drinks",
