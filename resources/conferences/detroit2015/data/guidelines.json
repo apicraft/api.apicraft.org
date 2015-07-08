@@ -1,0 +1,36 @@
+{
+	"principles":[
+		{
+			"title":"Whoever attends, they are the right people.",
+			"description":"Principle 1 reminds us that it is not how many attendees or even who (in the sense of status or position) attends that counts, rather it is the quality of the interaction and conversation that makes the difference. The major reason that the people who attend will be the right people is that they cared to attend."
+		},
+		{
+			"title":"Whatever happens is the only thing that could have happened.",
+			"description":"Principle 2 reminds us that real learning and real progress will only take place when we move beyond pre-conceived agendas and convention-bound expectations. If everything turned out just the way we expected, life would be exceedingly dull and learning in any useful sense simply would not occur. It is precisely in moments of surprise, large and small, that we grow. It is important to cherish such moments and realize that whatever happens is the only thing that could have happened."
+		},
+		{
+			"title":"Whenever it starts is the right time.",
+			"description":"Principle 3 is a notice about the nature of creativity and spirit. Both are essential and neither pays much attention to the clock. They appear (or not) in their own time, which by definition means it is the right time. So we remain mindful that just because a meeting is scheduled for 3:00 p.m., there is no guarantee that anything useful will take place at that moment. Whenever it starts will be the right time."
+		},
+		{
+			"title":"When it’s over, it’s over.",
+			"description":"The final principle helps us understand that the available time and space is ours to use as we choose. It also offers a marvelous way to save time and aggravation. If a session is scheduled for two hours but all of the useful business is conducted in the first twenty minutes then the session is over and we can be on our way."
+		},
+		{
+			"title":"Corollary: When it's not over, it's not over.",
+			"description":"There is a corollary to principle 4: when it’s not over, it’s not over. If we're not finished, nobody is there to tell us to move on, particularly if things are getting really good. Of course, we will respect other people who may have signed up for our meeting space. But it is no great task to move to some other place, or to choose another time when we might conveniently gather."
+		}
+	],
+	"laws":[
+		{
+			"title":"The Law of Mobility",
+			"description":"During our time together, if we find ourselves in a situation where we are neither learning nor contributing then we simply move to a more productive place. The law of mobility places responsibility for the quality of learning and contribution directly where it belongs: with each of us."
+		}
+	],
+	"expectations":[
+		{
+			"title":"Be prepared to be surprised",
+			"description":"Many organizations and lots of people spend considerable time trying to ensure that they will not be surprised. When this effort succeeds, a degree of comfort is doubtless experienced, but at a price. Things get pretty dull and creativity is difficult to find. Open Space is not about being dull; innovation is the coin of the realm. Surprise, therefore, is the essence of the undertaking."
+		}
+	]
+}

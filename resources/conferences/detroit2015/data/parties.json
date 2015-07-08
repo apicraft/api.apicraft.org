@@ -1,0 +1,44 @@
+{
+  "parties":[
+    {
+      "name":"Kick Off Party (fair weather)",
+      "what":["cash bar"],
+      "when":"Monday, July 28th, 8pm - Midnight",
+      "where":"Campus Martius Park, 800 Woodward Ave, Detroit, MI 48226",
+      "yelpID":"campus-martius-park-detroit",
+      "image":"http://apicraft.org/content/detroit2014/Pre_Party_Martius.jpg"
+    },
+    {
+      "name":"Kick Off Party (if rain)",
+      "what":["cash bar"],
+      "when":"Monday, July 28th, 8pm - Midnight",
+      "where":"Foran's Grand Trunk Pub, 612 Woodward Ave, Detroit, MI 48226",
+      "yelpID":"forans-grand-trunk-pub-detroit-2",
+      "image":"http://apicraft.org/content/detroit2014/Pre_Party.jpg"
+    },
+    {
+      "name":"Dinner & Drinks on Yacht",
+      "what":["free drinks", "free food"],
+      "when":"Tuesday, July 29th, 5pm - 9pm",
+      "where":"Board Yacht at Port Detroit, 130 E Atwater St, Detroit, MI 48226",
+      "yelpID": "waterview-loft-at-port-detroit-detroit",
+      "image":"http://apicraft.org/content/detroit2014/ovation.jpg"
+    },
+    {
+      "name":"Party",
+      "what":["cash bar"],
+      "when":"Tuesday, July 29th, 9pm - Midnight",
+      "where":"Volt Lounge, 400 Renaissance Center, Detroit, MI, 48226",
+      "yelpID":"volt-lounge-detroit",
+      "image":"http://apicraft.org/content/detroit2014/Volt_bar.jpg"
+    },
+    {
+      "name":"After-Party",
+      "what":["cash bar"],
+      "when":"Wednesday, July 30th, 5pm - 8pm",
+      "where":"Andiamo, 400 Renaissance Center, Detroit, MI 48226",
+      "yelpID":"andiamo-detroit-riverfront-detroit",
+      "image":"http://apicraft.org/content/detroit2014/Andiamos.jpg"
+    }
+  ]
+}
