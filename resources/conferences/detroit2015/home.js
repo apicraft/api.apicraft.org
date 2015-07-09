@@ -1,36 +1,13 @@
 module.exports = function(addHandler) {
 	addHandler('request', function(env, next) {
 		var body = {
-			venues: [
-			{ 
-				name: 'Hypermedia Panel',
-				identifier: 1,
-				version: '1.0',
-				start: "Monday July 28th, 2014 1pm", // 'Mon Jul 28 2014 13:00:00 GMT-0400 (EDT)',
-				end: "7pm", // 'Mon Jul 28 2014 20:00:00 GMT-0400 (EDT)',
-				theme: 'Where do we lead the hypermedia APIs of tomorrow?',
-				image: 'grand-circus.jpg',
-				location: {
-					display_name:'Grand Circus',
-					city: 'Detroit',
-					display_address: [ '1570 Woodward Ave', 'Downtown Detroit', 'Detroit, MI 48226' ],
-					geo_accuracy: 8,
-					neighborhoods: [ 'Downtown Detroit' ],
-					postal_code: '48226',
-					country_code: 'US',
-					address: [ '1570 Woodward Ave' ],
-					coordinate: { latitude:  42.335866, longitude: -83.049689 },
-					state_code: 'MI'
-				},
-				format: 'Panel Discussion <http://en.wiktionary.org/wiki/panel_discussion>',
-				yelp_url: 'http://www.yelp.com/biz/grand-circus-detroit'
-			},
+      event:
 			{ 
 				name: 'Open Space Conference',
-				identifier: 2,
-				version: '2.0',
-				start: "Tuesday July 29th, 2014 8am", // 'Tue Jul 29 2014 20:00:00 GMT-0400 (EDT)',
-				end: "Wednesday July 30th, 2014 7pm", // 'Wed Jul 30 2014 19:00:00 GMT-0400 (EDT)',
+				identifier: 1,
+				version: '3.0',
+				start: "Monday July 27th, 2015 8am",
+				end: "Wednesday July 29th, 2015 8pm",
 				theme: 'Where do we lead the APIs of tomorrow?',
 				image: 'port-detroit.jpg',
 				location: {
@@ -47,15 +24,14 @@ module.exports = function(addHandler) {
 				},
 				format: 'Open Space <http://en.wikipedia.org/wiki/Open-space_technology>',
 				yelp_url: 'http://www.yelp.com/biz/waterview-loft-at-port-detroit-detroit'
-			}
-			],
+			},
 			links: [
 			{ rel: 'self', href: env.helpers.uri('/conferences/') + env.config.location }
 			]
 		};
 
-		var rels = ['goals', 'guidelines', 'agenda', 'attendees',
-		'hotels', 'sessions', 'parties', 'questions', 'transit'];
+		var rels = ['agenda', 'venues', 'goals', 'guidelines', 'attendees',
+		'sessions', 'hotels', 'transit'];
 
 		rels.forEach(function(rel) {
 			body.links.push({

@@ -12,8 +12,6 @@ module.exports = function(server) {
     .get('/', require('./home'))
     .get('/attendees', require('./attendees'))
     .get('/hotels', require('./hotels'))
-    .get('/parties', require('./parties'))
-    .get('/questions', questions.get)
-    .post('/questions', questions.post)
-    ._wire();
+    .get('/venues', require('./venues'))
+  ._wire();
 };

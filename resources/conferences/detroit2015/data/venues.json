@@ -1,5 +1,5 @@
 {
-  "parties":[
+  "venues":[
     {
       "name":"Kick Off Party (fair weather)",
       "what":["cash bar"],
@@ -9,7 +9,7 @@
       "image":"http://apicraft.org/content/detroit2014/Pre_Party_Martius.jpg"
     },
     {
-      "name":"Kick Off Party (if rain)",
+      "name":"Kick Off Party (poor weather)",
       "what":["cash bar"],
       "when":"Monday, 8pm - Midnight",
       "where":"Foran's Grand Trunk Pub, 612 Woodward Ave, Detroit, MI 48226",
