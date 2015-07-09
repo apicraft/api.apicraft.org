@@ -3,7 +3,7 @@ module.exports = function(addHandler) {
 		var body = {
       event:
 			{ 
-				name: 'Open Space Conference',
+				name: 'API Craft Conference 2015 - Port Detroit',
 				identifier: 1,
 				version: '3.0',
 				start: "Monday July 27th, 2015 8am",
