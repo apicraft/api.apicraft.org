@@ -1,11 +1,15 @@
 {
   "locations": [
     {
+      "yelpID": "detroit-marriott-at-the-renaissance-center-detroit",
+      "apicraftType": "hotel"
+    },
+    {
       "yelpID": "the-westin-book-cadillac-detroit-detroit",
       "apicraftType": "hotel"
     },
     {
-      "yelpID": "detroit-marriott-at-the-renaissance-center-detroit",
+      "yelpID": "aloft-detroit-at-the-david-whitney-detroit",
       "apicraftType": "hotel"
     },
     {
