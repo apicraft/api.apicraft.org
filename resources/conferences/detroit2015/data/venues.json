@@ -1,6 +1,14 @@
 {
   "venues":[
     {
+      "name":"Swagger Meetup: Understanding How to Use Swagger and Its Tools‏",
+      "what":["meetup"],
+      "when":"Monday, 6:30pm - 8pm",
+      "where":"TechStars Mobility at Ford Field - 2000 Brush Street, Detroit",
+      "yelpID":"ford-field-detroit",
+      "image":"http://apicraft.org/content/detroit2014/fordfield.jpg"
+    },
+    {
       "name":"Kick Off Party (fair weather)",
       "what":["cash bar"],
       "when":"Monday, 8pm - Midnight",
