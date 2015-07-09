@@ -2,13 +2,19 @@
 	"transit":[
 		{
 			"name":"Uber",
-			"cost":"$$$",
+			"cost":"$$",
 			"description":"You can use Uber to get to or from the Airport, or to get from your hotel to the conference.",
-			"url":"https://www.uber.com/"
+			"url":"https://www.uber.com/cities/detroit"
+		},
+		{
+			"name":"Lyft",
+			"cost":"$$",
+			"description":"You can use Lyft to get to or from the Airport, or to get from your hotel to the conference.",
+			"url":"https://www.lyft.com/cities/detroit"
 		},
 		{
 			"name":"Metro Cars",
-			"cost":"$$",
+			"cost":"$$$",
 			"description":"You can use Metro Cars to get to or from the Airport, or to get from your hotel to the conference.",
 			"phone":"1.800.456.1701",
 			"url":"http://www.metrocars.com/"
