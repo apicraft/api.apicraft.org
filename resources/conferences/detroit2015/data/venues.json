@@ -35,10 +35,10 @@
     {
       "name":"Dinner & Drinks",
       "what":["cash bar", "cash food"],
-      "when":"Tuesday, 6pm - 11pm",
-      "where":"TBD. Backup: Volt Lounge, 400 Renaissance Center, Detroit, MI, 48226",
-      "yelpID":"volt-lounge-detroit",
-      "image":"http://apicraft.org/content/detroit2015/Volt_bar.jpg"
+      "when":"Tuesday, 6pm - 8pm",
+      "where":"Punch Bowl Social, 1331 Broadway St, Detroit",
+      "yelpID":"punch-bowl-social-detroit-3",
+      "image":"http://apicraft.org/content/detroit2015/punch_bowl.png"
     },
     {
       "name":"After-Party",
